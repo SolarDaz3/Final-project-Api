@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bitcount Prop Double Ink", system-ui,"Roboto", sans-serif;
+}
+
+.navbar{
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+.logo{
+    position: sticky;
+    width: 100px;
+    height: 100px;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1,h2{
+    padding: 16px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+.flex__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .dex__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .dex{
+    width: 1400px;
+    height: 1000px;
+    border-radius: 40%;
+ }
+
+
+
+
+
+.searchbar{
+    border: 1px solid #5797ff;
+    outline: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    margin-top: 12px;
+    display: flex;
+    
+}
+
+.search-row {
+  display: flex;
+  align-items: center;       
+  gap: 0.5rem;               
+}
+
+.search-input {
+  flex: 1;
+  width: 200px;                   
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ditto {
+  width: 60px;               
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;           
+}
+
