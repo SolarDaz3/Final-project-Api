@@ -116,7 +116,7 @@ h2 {
   gap: 0.5rem;
 }
 
-.search-input {
+#pokemonName {
   flex: 1;
   width: 200px;
   height: 25px;
@@ -126,22 +126,7 @@ h2 {
   border: 1px solid #5797ff;
 }
 
-.ditto {
-  width: 60px;
-  height: auto;
-  margin-left: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
-.ditto:hover {
-  transform: scale(1.05);
-  transition: ease 500ms;
-}
-
-.ditto:active {
-  animation: spin 0.35s linear infinite;
-}
 
 @keyframes spin {
   from {

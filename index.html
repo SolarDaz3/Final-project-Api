@@ -17,7 +17,7 @@
       <ul>
         <li><img class="logo" src="./Assets/JgLogo.png" alt=""></li>
         <li class="hideOnMobile"><a href="#">Home</a></li>
-        <li class="hideOnMobile"><a href="#search">Find your Pokemon!</a></li>
+        <li class="hideOnMobile"><a href="#pokemonSearch">Find your Pokemon!</a></li>
         <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
       </ul>
     </nav>
@@ -30,12 +30,15 @@
             <h2>Let's search em all!</h2>
             <div class="search-row">
               <input
-                type="search"
-                class="search-input"
+                type="text"
+                id="pokemonName"
                 placeholder="Search for a Pokemon"
-                id="search"
               />
-              <img src="./Assets/ditto.png" alt="Ditto" class="ditto" />
+              <button onclick="fetchData()">Catch em All</button> <br>
+              
+
+              <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+
             </div>
           </div>
         </div>
