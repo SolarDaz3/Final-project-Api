@@ -5,54 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a690b63af9.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="navbar">
-      <div class="nav__content--wrapper">
-        <div class="nav__logo--wrapper">
-          <img class="logo" src="./assets/JgLogo.png" alt="" />
-        </div>
-      </div>
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#search">Find your Pokemon!</a>
-      </div>
-      <!-- <div class="phone__nav">
-        <div class="tiny-dex show-anim-in">
-            <img src="./assets/Tiny dex.webp" alt="">
-          <div class="close-btn">
-            <div class="showMenu">
-              <a href="#">Home</a>
-              <a href="#search">Find your Pokemon</a> -->
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#search">Find your Pokemon!</a></li>
+      </ul>
+      <ul>
+        <li><img class="logo" src="./Assets/JgLogo.png" alt=""></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#search">Find your Pokemon!</a></li>
+        <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+
+    <section id="landing-page">
+      <div class="content-wrapper">
+        <div class="flex">
+          <div class="flex__text">
+            <h1>Your source for finding all your favorite Pokemon!</h1>
+            <h2>Let's search em all!</h2>
+            <div class="search-row">
+              <input
+                type="search"
+                class="search-input"
+                placeholder="Search for a Pokemon"
+                id="search"
+              />
+              <img src="./Assets/ditto.png" alt="Ditto" class="ditto" />
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <section id="landing-page">
-        <div class="content-wrapper">
-            <div class="flex">
-                <div class="flex__text">
-                    <h1>Your source for finding all your favorite Pokemon!</h1>
-                    <h2>Let's search em all!</h2>
-                    <div class="search-row">
-                      <input type="search" class="search-input" placeholder="Search for a Pokemon" id="search">
-                      <img src="./Assets/ditto.png" alt="Ditto" class="ditto">
-                    </div>
-                </div>
-            </div>
-            <div class="dex__img">
-             
-              <img class="dex" src="./assets/Pokedex.png" alt="">
-                
-            </div>
-        </div>
     </section>
 
     <script src="index.js"></script>
   </body>
 </html>
-
-
-
-
