@@ -10,11 +10,17 @@ function hideSidebar(){
 
 
 
+
+
+
+
+
 async function fetchData() {
 
     try{
         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
         const response = await fetch( `https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+        
 
         if(!response.ok){
             throw new Error("Pokemon not found");
@@ -39,12 +45,3 @@ async function fetchData() {
 
 
 
-// fetch("https://pokeapi.co/api/v2/pokemon/infernape")
-//     .then(response => {
-//         if(!response.ok){
-//             throw new Error("Pokemon not found");
-//         }
-//         return response.json();
-//     })
-//     .then(data => console.log(data.name))
-//     .catch(error => console.error(error));
